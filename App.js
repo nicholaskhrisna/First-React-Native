@@ -121,14 +121,18 @@ import {Text, View, Image, TextInput, StyleSheet, ScrollView} from 'react-native
 import BasicComponent from './BasicComponent';
 import FlexBox from './FlexBox';
 import StylingRNComponent from './StylingRNComponent'
+import PositionRN from './PositionRN';
+import PropsDinamis from './PropsDinamis';
 
 const App = () => {
   return (
     <View>
       <ScrollView>
         {/* <BasicComponent />
-        <StylingRNComponent /> */}
-        <FlexBox />
+        <StylingRNComponent />
+        <FlexBox /> */}
+        <PositionRN />
+        {/* <PropsDinamis /> */}
       </ScrollView>
     </View>
   );
