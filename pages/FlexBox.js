@@ -1,6 +1,6 @@
 import {Component} from 'react';
 import {Text, View, Image} from 'react-native';
-import cb from './coolzebra.png'
+import cb from '../pics/coolzebra.png'
 
 class FlexBox extends Component {
   render() {

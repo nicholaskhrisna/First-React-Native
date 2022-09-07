@@ -32,7 +32,7 @@ const PropsDinamis = () => {
 
 const Story = (props) => {
   return (
-    <View style={{marginRight: 20, alignItems:'center'}}>
+    <View style={{marginLeft: 7, marginRight: 7, alignItems:'center'}}>
       <Image
         source={{uri: props.gambar}}
         style={{width: 70, height: 70, borderRadius: 70/2}}

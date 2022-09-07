@@ -1,11 +1,11 @@
 import React from "react";
 import {StyleSheet, View, Text, Image} from "react-native";
-import macbook from './macbook.jpeg'
+import macbook from '../pics/macbook.jpeg'
 
 const StylingRNComponent = () => {
     return (
       <View>
-        <Text style={styles.text}>Styling Component</Text>
+        {/* <Text style={styles.text}>Styling Component</Text>
         <View
           style={{
             width: 100,
@@ -16,7 +16,7 @@ const StylingRNComponent = () => {
             marginTop: 30,
             marginLeft: 30,
           }}
-        />
+        /> */}
   
         {/* Card untuk macbook */}
         <View

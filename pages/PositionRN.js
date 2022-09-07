@@ -1,6 +1,6 @@
 import {Component} from 'react';
 import {View, Text, StyleSheet, Image} from 'react-native';
-import cart from './cart.png';
+import cart from '../pics/cart.png';
 
 class PositionRN extends Component {
   render() {

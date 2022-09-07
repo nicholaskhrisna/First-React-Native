@@ -118,12 +118,13 @@
 import React, {Component} from 'react';
 import {Text, View, Image, TextInput, StyleSheet, ScrollView} from 'react-native';
 // import macbook from './macbook.jpeg';
-import BasicComponent from './BasicComponent';
-import FlexBox from './FlexBox';
-import StylingRNComponent from './StylingRNComponent'
-import PositionRN from './PositionRN';
-import PropsDinamis from './PropsDinamis';
-import StateDinamis from './StateDinamis';
+import BasicComponent from './pages/BasicComponent';
+import FlexBox from './pages/FlexBox';
+import StylingRNComponent from './pages/StylingRNComponent'
+import PositionRN from './pages/PositionRN';
+import PropsDinamis from './pages/PropsDinamis';
+import StateDinamis from './pages/StateDinamis';
+import Communication from './pages/Communication';
 
 const App = () => {
   return (
@@ -134,7 +135,8 @@ const App = () => {
         {/* <FlexBox /> */}
         {/* <PositionRN /> */}
         {/* <PropsDinamis /> */}
-        <StateDinamis />
+        {/* <StateDinamis /> */}
+        <Communication />
       </ScrollView>
     </View>
   );
