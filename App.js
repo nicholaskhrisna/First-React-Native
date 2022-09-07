@@ -116,136 +116,22 @@
 // });
 
 import React, {Component} from 'react';
-import {Text, View, Image, TextInput, StyleSheet} from 'react-native';
-import macbook from './macbook.jpeg'
+import {Text, View, Image, TextInput, StyleSheet, ScrollView} from 'react-native';
+// import macbook from './macbook.jpeg';
+import BasicComponent from './BasicComponent';
+import FlexBox from './FlexBox';
+import StylingRNComponent from './StylingRNComponent'
 
 const App = () => {
   return (
-    <StylingRNComponent />
-  )
-}
-
-const StylingRNComponent = () => {
-  return (
     <View>
-      <Text style={styles.text}>Styling Component</Text>
-      <View style={{
-        width: 100,
-        height: 100,
-        backgroundColor: 'blue',
-        borderWidth: 5,
-        borderColor: 'pink',
-        marginTop: 30,
-        marginLeft: 30
-      }}/>
-
-      {/* Card untuk macbook */}
-      <View style={{
-        padding: 12, 
-        backgroundColor: '#f2f2f2',
-        width: 212}}>
-
-        <Image source={macbook} style={{
-          width: 188, 
-          height: 107,
-          borderRadius: 8}}>
-        </Image>
-
-        <Text style={{
-          fontSize: 14, 
-          fontWeight: 'bold', 
-          marginTop: 16}}>New Macbook Pro 2019
-        </Text>
-
-        <Text style={{
-          fontSize: 12,
-          fontWeight: 'bold',
-          color: '#f2994a',
-          marginTop: 14}}>Rp. 25.000.000,-
-        </Text>
-
-        <Text style={{
-          fontSize: 12,
-          fontWeight: '300',
-          marginTop: 12
-        }}>Jakarta Barat
-        </Text>
-
-        <View style={{
-          backgroundColor: '#6fcf97',
-          borderRadius: 25,
-          // paddingVertical: 6, --> bisa pakai ini utk Top dan Bottom
-          paddingTop: 6,
-          paddingBottom: 6,
-          marginTop: 20
-        }}>
-          <Text style={{
-            color: 'white',
-            fontSize: 14,
-            fontWeight: '600',
-            textAlign: 'center'
-          }}>BELI</Text>
-        </View>
-      </View>
-
-    </View>
-  )
-}
-
-const styles = StyleSheet.create({
-  text: {
-    color: '#10ac84',
-    fontSize: 25,
-    fontWeight: 'bold',
-    marginTop: 40,
-    marginLeft: 30
-  }
-})
-
-const BasicComponent = () => {
-  return(
-    <View>
-      <View style={{width: 80, height: 80, backgroundColor: 'green'}}/>
-
-      <Text>Hello World</Text>
-      <Text>Hello World</Text>
-      <Text>Hello World</Text>
-
-      {/* panggil const Nama */}
-      <Nama></Nama> 
-      <Nama/>
-
-      {/* panggil const Gambar */}
-      <Gambar/>
-
-      <TextInput style={{borderWidth: 1}}></TextInput>
-
-      {/* panggil class component Profile */}
-      <Profile />
+      <ScrollView>
+        {/* <BasicComponent />
+        <StylingRNComponent /> */}
+        <FlexBox />
+      </ScrollView>
     </View>
   );
-}
-
-const Nama = () => {
-  return <Text>Nicholas</Text>
-}
-
-const Gambar = () => {
-  return <Image source={{uri: 'https://placeimg.com/100/100/animals'}} style={{width: 100, height: 100}}></Image>
-}
-
-class Profile extends Component {
-  render() {
-    return(
-      <View>
-      <Text style={{color: 'blue', fontSize: 25}}>Class Component</Text>
-      <Image 
-        source={{uri: 'https://placeimg.com/100/100/people'}} 
-        style={{width: 100, height: 100, borderRadius: 50}}/>
-      <Text style={{color: 'blue', fontSize: 25}}>Ini foto profile</Text>
-    </View>
-    );
-  }
-}
+};
 
 export default App;
