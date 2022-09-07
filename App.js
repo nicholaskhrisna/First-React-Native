@@ -123,16 +123,18 @@ import FlexBox from './FlexBox';
 import StylingRNComponent from './StylingRNComponent'
 import PositionRN from './PositionRN';
 import PropsDinamis from './PropsDinamis';
+import StateDinamis from './StateDinamis';
 
 const App = () => {
   return (
     <View>
       <ScrollView>
-        {/* <BasicComponent />
-        <StylingRNComponent />
-        <FlexBox /> */}
-        <PositionRN />
+        {/* <BasicComponent /> */}
+        {/* <StylingRNComponent /> */}
+        {/* <FlexBox /> */}
+        {/* <PositionRN /> */}
         {/* <PropsDinamis /> */}
+        <StateDinamis />
       </ScrollView>
     </View>
   );
