@@ -125,6 +125,7 @@ import PositionRN from './pages/PositionRN';
 import PropsDinamis from './pages/PropsDinamis';
 import StateDinamis from './pages/StateDinamis';
 import Communication from './pages/Communication';
+import CallAPI from './pages/CallAPI';
 
 const App = () => {
   return (
@@ -136,7 +137,8 @@ const App = () => {
         {/* <PositionRN /> */}
         {/* <PropsDinamis /> */}
         {/* <StateDinamis /> */}
-        <Communication />
+        {/* <Communication /> */}
+        <CallAPI />
       </ScrollView>
     </View>
   );
